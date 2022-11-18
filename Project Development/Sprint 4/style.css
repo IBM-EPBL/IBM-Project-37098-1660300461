@@ -1,0 +1,157 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Playfair Display, sans-serif;
+  background: #f1f1f1;
+}
+
+.home {
+  height: 100vh;
+  position: relative;
+}
+video {
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  background: rgba(0,0,0,0.6);
+}
+.home-content {
+  width: 600px;
+  margin: 0 auto;
+  position: relative;
+  top: 200px;
+  color: #fff;
+  z-index: 3;
+}
+.home-content h1 {
+  font-family: Playfair Display, serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 85px;
+  line-height: 1.1;
+}
+
+.home-content button {
+  display: block;
+  font-size: 20px;
+  border: 1px solid #f1f1f1;
+  border-radius: 5px;
+  background: transparent;
+  color: #fff;
+  margin: 50px auto 0;
+  padding: 16px 30px;
+  cursor: pointer;
+}
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+body {
+	margin: 0;
+	background: #222;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+}
+
+.container1 {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+  background: #0c0a0c;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: rgb(233, 229, 229);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: rgb(167, 80, 162);
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right, #cc8fbd, #c5aebf);
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  height: 700px;
+  width: 400px;
+}
+::ng-deep .mat-progress-spinner circle, .mat-spinner circle {
+  stroke: #ffffff !important;
+}
+
+
+
+
+
