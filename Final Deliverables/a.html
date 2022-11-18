@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sales Prediction</title>
+    
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  
+    <header>
+      <div class="container1">
+       
+  
+        <nav>
+          <ul>
+            <li><a href="#">Vehicle Based Analyser</a></li>
+           
+           
+           
+          </ul>
+        </nav>
+      </div>
+      
+    
+    </header>
+    
+    
+  </head>
+  <body>
+      
+      <div class="home">
+        <video autoplay muted loop>
+          <source src="ressources/cooking.mp4" type="video/mp4" />
+        </video>
+        <div class="overlay"></div>
+        <div class="home-content">
+           
+            <form action="{{ url_for('y_predict')}}"method="post">
+
+
+                <input type="text" name="Cylinders" placeholder="No.of cylinders (count)" required="required" />
+           
+           
+                  <input type="text" name="Displacement" placeholder="Displacement (in miles)" required="required" />
+           
+           
+            <input type="text" name="Horsepower" placeholder="Horsepower (per sec)" required="required" />
+           
+           
+                  <input type="text" name="Weight" placeholder="Weight (in pounds)" required="required" />
+           
+           
+                  <input type="text" name="Model Year" placeholder="Model Year (YY)" required="required" />
+           
+           
+                  <input type="text" name="Origin" placeholder="Origin" required="required" />
+           
+           
+                  <br>
+           
+           
+                 
+                 
+                 <p id = "para">Predict</p>
+                 <script>
+                    document.getElementById("para").onclick = function() {
+                    fun()
+                    };
+                    function fun() {
+                    document.getElementById("para").innerHTML = " Carry extra fuel";
+                    document.getElementById("para").style.color = "white";
+                    document.getElementById("para").style.backgroundColor = "black";
+                    document.getElementById("para").style.fontSize = "25px";
+                    document.getElementById("para").style.border = "4px solid black"; 
+                    }
+                    </script>
+           
+              </form>
+        </div>
+      </div>
+
+  </body>
+</html>
